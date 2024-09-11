@@ -22,7 +22,7 @@ const projectDescription = document.querySelector('.project-description');
 // Define o array de projetos
 const projects = [
 	{
-		img: '../assets/project1.png',
+		img: './assets/project1.png',
 		repository: 'https://github.com/willy4nn/My-Portfolio',
 		deploy: 'https://willy4nn.github.io/Web-X/',
 		title: 'Web-X',
