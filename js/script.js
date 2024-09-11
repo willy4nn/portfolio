@@ -23,7 +23,7 @@ const projectDescription = document.querySelector('.project-description');
 const projects = [
 	{
 		img: './assets/project1.png',
-		repository: 'https://github.com/willy4nn/My-Portfolio',
+		repository: 'https://github.com/willy4nn/Web-X',
 		deploy: 'https://willy4nn.github.io/Web-X/',
 		title: 'Web-X',
 		tech: 'HTML, CSS, JavaScript',
