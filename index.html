@@ -101,7 +101,7 @@
 					width="180px"
 				/>
 			</div>
-			<div class="projects-section section">
+			<div class="projects-container section">
 				<div class="title-container">
 					<span>Bem,</span>
 					<h2 class="heading-secondary">O que eu trago à mesa.</h2>
@@ -125,40 +125,62 @@
 							<p class="paragraph">Veja no GitHub</p>
 						</a>
 					</div>
-					<div class="projects-container">
+					<div class="slider">
 						<div class="project">
-							<div class="slider">
+							<div class="image-container">
+								<img src="" alt="" />
+								<div class="buttons-container">
+									<a
+										target="_blank"
+										href=""
+										class="button repository"
+										>Repository</a
+									>
+									<a
+										target="_blank"
+										href=""
+										class="button deploy"
+										>Deploy</a
+									>
+								</div>
+							</div>
+							<div class="info-container">
+								<p class="paragraph">
+									Título:
+									<span
+										class="paragraph project-title"
+									></span>
+								</p>
+								<p class="paragraph">
+									Tecnologias:
+									<span class="paragraph project-tech"></span>
+								</p>
+								<p class="paragraph">
+									Descrição:
+									<span
+										class="paragraph project-description"
+									></span>
+								</p>
+							</div>
+						</div>
+						<div class="pagination">
+							<div class="prev">
 								<img
-									src="./assets/project1.png"
+									src="./assets/caret-left-fill.svg"
 									alt=""
-									width="24px"
+									srcset=""
 								/>
 							</div>
-							<div class="buttons-container">
-								<a href="" class="button">
-									<img
-										src="./assets/code-bold.svg"
-										alt=""
-										srcset=""
-									/>
-									<p>Code</p>
-								</a>
-								<div class="controlls">
-									<div class="button">
-										<img
-											src="./assets/caret-circle-left-fill.svg"
-											alt=""
-											srcset=""
-										/>
-									</div>
-									<div class="button">
-										<img
-											src="./assets/caret-circle-right-fill.svg"
-											alt=""
-											srcset=""
-										/>
-									</div>
-								</div>
+							<p>
+								<span class="counter"></span>
+								de
+								<span class="limit"></span>
+							</p>
+							<div class="next">
+								<img
+									src="./assets/caret-right-fill.svg"
+									alt=""
+								/>
 							</div>
 						</div>
 					</div>
@@ -212,9 +234,10 @@
 							<p>+55 87 99931-9947</p></a
 						>
 					</div>
-					<p class="paragraph">© All rights reserved</p>
+					<p class="paragraph">© All rights reserved.</p>
 				</div>
 			</footer>
 		</div>
+		<script src="./js/script.js"></script>
 	</body>
 </html>
