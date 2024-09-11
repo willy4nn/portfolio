@@ -112,6 +112,36 @@ body {
 	width: 24px;
 }
 
+.pagination {
+	display: flex;
+	width: fit-content;
+	background: #ffff88;
+	padding: 4px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	gap: 1rem;
+}
+
+.pagination p {
+	color: #000000;
+}
+
+.prev,
+.next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 8px;
+	border-radius: 4px;
+	background: #161601;
+	cursor: pointer;
+}
+
+.next:hover {
+	background: #161601;
+}
+
 /* ⭐ Home */
 .home-container {
 	display: flex;
@@ -210,7 +240,7 @@ body {
 	gap: 4px;
 }
 
-.content-container {
+.about-container .content-container {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
@@ -266,7 +296,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-	.content-container {
+	.about-container .content-container {
 		display: flex;
 		flex-direction: row;
 		gap: 1.5rem;
@@ -298,59 +328,69 @@ body {
 }
 
 /* ⭐ Projects */
-.projects-section {
+.projects-container {
 	min-height: 100vh;
 	height: auto;
 }
 
-.projects-section .content-container {
-	flex-direction: column;
-}
-
-.projects-container {
+.projects-container .content-container {
 	display: flex;
+	flex-direction: column;
 	gap: 1rem;
 }
 
+.slider {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
 .project {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.project .image-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	flex: 1;
+}
+
+.project .info-container {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
 }
 
-.slider {
-	height: 100%;
+.project .info-container > p {
+	color: #c5c7b2;
+	font-weight: 600;
+}
+
+.project .info-container > p > span {
+	font-weight: 400;
+}
+
+.project .image-container > img {
 	width: 100%;
+	border-radius: 4px;
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
 }
 
-.slider > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 8px;
-	object-position: top;
-}
-
-.controlls {
-	display: flex;
-	gap: 4px;
-}
-
-@media (min-width: 744px) {
-	.slider > img {
-		flex: 1;
-		max-height: 35rem;
-		object-fit: cover;
-		border-radius: 8px;
-	}
+.project > .image-container > img.visible {
+	opacity: 1;
 }
 
 @media (min-width: 1024px) {
-	.slider > img {
-		flex: 1;
-		max-height: 20rem;
-		object-fit: cover;
-		border-radius: 8px;
+	.project {
+		flex-direction: row;
+	}
+
+	.project .image-container {
+		max-width: 50%;
 	}
 }
 
@@ -367,6 +407,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: start;
+	gap: 2rem;
 }
 
 .links {
