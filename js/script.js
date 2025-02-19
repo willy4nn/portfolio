@@ -30,6 +30,15 @@ const projects = [
 		description:
 			'Projeto básico focado no aprimoramento de habilidades em HTML, CSS e JavaScript, com ênfase em boas práticas de desenvolvimento responsivo.',
 	},
+	{
+		img: './assets/project2.png',
+		repository: 'https://github.com/willy4nn/Pommy',
+		deploy: 'https://github.com/willy4nn/Pommy',
+		title: 'Pommy',
+		tech: 'Typescript, Express, Jest',
+		description:
+			'Pommy é um gerenciador de tarefas que utiliza o método Pomodoro para ajudar você a aumentar sua produtividade. Ainda está em desenvolvimento.',
+	}
 ];
 
 // Define o limite máximo da paginação
